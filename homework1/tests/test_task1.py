@@ -1,4 +1,5 @@
-from src.task1 import hello_world
+from task1 import hello_world
+import pytest
 
 def test_task1(capsys):
     hello_world()
