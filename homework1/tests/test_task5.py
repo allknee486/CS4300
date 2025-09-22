@@ -1,4 +1,4 @@
-from task5 import book_list
+from task5 import book_list, create_student_database
 import pytest
 
 def test_task_five(capsys):
@@ -8,3 +8,6 @@ def test_task_five(capsys):
     captured = capsys.readouterr()
     captured = captured.out.strip().split('\n')
     assert len(captured) == 3
+
+    student_data = create_student_database()
+    assert type(student_data) == dict
