@@ -25,12 +25,14 @@ SECRET_KEY = 'django-insecure-*-g5iu8pnpg^fa4sj7^2at3cv)fn^x$ia=s(bdh=+-qh8r=_n)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    'editor-dolney-20.devedu.io'
+]
 
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'bookings.apps.BookingsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -66,6 +68,14 @@ TEMPLATES = [
         },
     },
 ]
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 WSGI_APPLICATION = 'movie_theater_booking.wsgi.application'
 
