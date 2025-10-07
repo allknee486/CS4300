@@ -66,6 +66,7 @@ Admin Panel: https://your-app-name.onrender.com/admin/
 Prerequisites
 
 A Render account (sign up at render.com)
+
 Your project pushed to a Git repository (GitHub, GitLab, or Bitbucket)
 
 ## API Endpoints
