@@ -55,14 +55,14 @@ A Django REST Framework-based API for managing movie bookings, seat reservations
 
 The API will be available at `http://localhost:8000/api/`
 
-Deployment
+## Deployment
 This project is deployed on Render, a cloud platform for hosting web applications.
-Live Application
+## Live Application
 
 Production URL: https://your-app-name.onrender.com/api/
 Admin Panel: https://your-app-name.onrender.com/admin/
 
-Deploying to Render
+## Deploying to Render
 Prerequisites
 
 A Render account (sign up at render.com)
